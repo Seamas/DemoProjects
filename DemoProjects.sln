@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacDemo", "AutofacDemo\AutofacDemo.csproj", "{58ED8FAF-583B-48C5-8423-CF34198883B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DISample", "DISample\DISample.csproj", "{65704545-6F57-4FAE-9F95-19B167BDCDBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacMvcDemo", "AutofacMvcDemo\AutofacMvcDemo.csproj", "{5D012A8D-2F60-44C5-9ECE-E32AE7FC4FAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58ED8FAF-583B-48C5-8423-CF34198883B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58ED8FAF-583B-48C5-8423-CF34198883B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58ED8FAF-583B-48C5-8423-CF34198883B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58ED8FAF-583B-48C5-8423-CF34198883B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65704545-6F57-4FAE-9F95-19B167BDCDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65704545-6F57-4FAE-9F95-19B167BDCDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65704545-6F57-4FAE-9F95-19B167BDCDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65704545-6F57-4FAE-9F95-19B167BDCDBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D012A8D-2F60-44C5-9ECE-E32AE7FC4FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D012A8D-2F60-44C5-9ECE-E32AE7FC4FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D012A8D-2F60-44C5-9ECE-E32AE7FC4FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D012A8D-2F60-44C5-9ECE-E32AE7FC4FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
