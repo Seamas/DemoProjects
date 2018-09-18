@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Integration.Wcf;
-using DISample;
+using WcfSample;
 
 namespace AutofactWcfClient
 {
@@ -19,7 +19,7 @@ namespace AutofactWcfClient
             #region 动态注册
 
             var type = typeof(ChannelFactory<>).MakeGenericType(typeof(IHelloWorld));
-            var singleton = Activator.CreateInstance(type, new object[] { new NetTcpBinding(), "net.tcp://127.0.0.1/IHelloWorld" });
+            var singleton = Activator.CreateInstance(type, new object[] { new NetTcpBinding(), "net.tcp://127.0.0.1:9999/IHelloWorld" });
 
             builder.Register(c => singleton)
                 .As(type)   //使用动态注册,必须增加 As(), 否则 singleton会被当作 object类型注册, 导致后面获取不到类型
@@ -31,7 +31,7 @@ namespace AutofactWcfClient
             #region 静态注册
 
             //var singleton = new ChannelFactory<IHelloWorld>
-            //    (new NetTcpBinding(), "net.tcp://127.0.0.1/IHelloWorld");
+            //    (new NetTcpBinding(), "net.tcp://127.0.0.1:9999/IHelloWorld");
             //builder.Register(c => singleton)
             //    .SingleInstance();
 

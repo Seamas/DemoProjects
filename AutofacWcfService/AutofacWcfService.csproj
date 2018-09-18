@@ -59,9 +59,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DISample\DISample.csproj">
-      <Project>{65704545-6f57-4fae-9f95-19b167bdcdbf}</Project>
-      <Name>DISample</Name>
+    <ProjectReference Include="..\WcfSample\WcfSample.csproj">
+      <Project>{3bd6c995-eeb1-4a7e-abd3-9bc07eb893ce}</Project>
+      <Name>WcfSample</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

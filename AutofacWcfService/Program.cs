@@ -4,7 +4,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using DISample;
+using WcfSample;
 
 namespace AutofacWcfService
 {
@@ -12,7 +12,7 @@ namespace AutofacWcfService
     {
         static void Main(string[] args)
         {
-            var uri = new Uri("net.tcp://127.0.0.1");
+            var uri = new Uri("net.tcp://127.0.0.1:9999");
             var binding = new NetTcpBinding();
 
             var type = typeof(HelloWorld);
