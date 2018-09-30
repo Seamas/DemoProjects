@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitDemo", "EmitDemo\EmitDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfSample", "WcfSample\WcfSample.csproj", "{3BD6C995-EEB1-4A7E-ABD3-9BC07EB893CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProtectDemo", "DataProtectDemo\DataProtectDemo.csproj", "{24B07319-2C19-4A41-B056-BC5E96F9191B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3BD6C995-EEB1-4A7E-ABD3-9BC07EB893CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BD6C995-EEB1-4A7E-ABD3-9BC07EB893CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BD6C995-EEB1-4A7E-ABD3-9BC07EB893CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B07319-2C19-4A41-B056-BC5E96F9191B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B07319-2C19-4A41-B056-BC5E96F9191B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B07319-2C19-4A41-B056-BC5E96F9191B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B07319-2C19-4A41-B056-BC5E96F9191B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
