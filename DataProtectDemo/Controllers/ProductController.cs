@@ -8,15 +8,15 @@ using Microsoft.AspNetCore.Mvc;
 namespace DataProtectDemo.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+//    [ApiController]
     public class ProductController : ControllerBase
     {
         private DPContext _context;
-        private ITimeLimitedDataProtector _dataProtector;
-        public ProductController(DPContext context, IDataProtectionProvider provider)
+        private IDataProtector _dataProtector;
+        public ProductController(DPContext context, IDataProtector dataProtector)
         {
             _context = context;
-            _dataProtector = provider.CreateProtector("pms").ToTimeLimitedDataProtector();
+            _dataProtector = dataProtector;
         }
         
         [HttpGet]
@@ -25,16 +25,15 @@ namespace DataProtectDemo.Controllers
         {
             var result = _context.Products.Select(item => new
             {
-                ID= this._dataProtector.Protect(item.Id.ToString(), TimeSpan.FromMinutes(10)), 
+                ID= _dataProtector.Protect(item.Id.ToString()), 
                 item.Name
             });
 
             return Ok(result);
         }
 
-        [HttpGet]
-        [Route("get")]
-        [DecryptReference]
+        [HttpGet("{id}")]
+        [DecryptReference("id", typeof(int))]
         public async Task<IActionResult> Get(int id)
         {
             var result = await _context.Products.FindAsync(id);

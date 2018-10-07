@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DataProtectDemo.Models;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +30,13 @@ namespace DataProtectDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
             services.AddDataProtection();
+
+            services.AddSingleton(sp =>
+                sp.GetDataProtector("tdp").ToTimeLimitedDataProtector());
+            services.AddSingleton(sp => sp.GetDataProtector("dp"));
+            
             services.AddDbContext<DPContext>(option =>
             {
                 option.UseMySql(Configuration.GetConnectionString("mysql"));
@@ -51,7 +58,7 @@ namespace DataProtectDemo
             
 //            Seed(app);
 
-            app.UseHttpsRedirection();
+//            app.UseHttpsRedirection();
             app.UseMvc();
         }
 
