@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiVersionDemo", "ApiVersio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadFileDemo", "UploadFileDemo\UploadFileDemo.csproj", "{5EF328AA-21F6-43EB-931E-C7278DFF02D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDemo", "AsyncDemo\AsyncDemo.csproj", "{75B0F073-0F10-4B06-86B8-9CD437C7CC1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapCoreDemo", "SoapCoreDemo\SoapCoreDemo.csproj", "{BA18E15D-B14D-4DB0-8138-63AF671A4B20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{5EF328AA-21F6-43EB-931E-C7278DFF02D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EF328AA-21F6-43EB-931E-C7278DFF02D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EF328AA-21F6-43EB-931E-C7278DFF02D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75B0F073-0F10-4B06-86B8-9CD437C7CC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B0F073-0F10-4B06-86B8-9CD437C7CC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B0F073-0F10-4B06-86B8-9CD437C7CC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B0F073-0F10-4B06-86B8-9CD437C7CC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA18E15D-B14D-4DB0-8138-63AF671A4B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA18E15D-B14D-4DB0-8138-63AF671A4B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA18E15D-B14D-4DB0-8138-63AF671A4B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA18E15D-B14D-4DB0-8138-63AF671A4B20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
